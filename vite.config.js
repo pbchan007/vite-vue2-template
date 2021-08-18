@@ -40,4 +40,12 @@ export default defineConfig({
   optimizeDeps: {
     include: ["axios", "dayjs"],
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        // fixme scss 引用目前只发现 src 不报错
+        // additionalData: `@import 'src/styles/var.scss';`
+      }
+    }
+  }
 });

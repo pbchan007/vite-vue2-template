@@ -51,11 +51,6 @@ export const responseHandler = response => {
     return res;
   }
 
-  // 粗略判断是图片上传返回字符串连接
-  if (typeof res === "string" && res.indexOf("http") > -1) {
-    return res;
-  }
-
   // todo 粗劣判断是文本流文件
   if (
     response.headers &&

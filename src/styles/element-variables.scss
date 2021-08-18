@@ -1,0 +1,11 @@
+/* 改变主题色变量 */
+@import './var.scss';
+
+$--color-primary: $g-theme-color;
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: "~element-ui/lib/theme-chalk/fonts";
+
+// fixme 貌似vite不支持，待解决
+// @import "~element-ui/packages/theme-chalk/src/index";
+@import "node_modules/element-ui/packages/theme-chalk/src/index.scss";

@@ -2,10 +2,12 @@ import Vue from "vue";
 import "normalize.css/normalize.css";
 import './styles/index.scss'
 import Element from "element-ui";
+import './styles/index.scss'
 import App from "./App.vue";
 import store from "./store/index";
 import router from "./router/index";
 
+import './routerPermission'
 Vue.use(Element, {
   size: "samll",
 });
